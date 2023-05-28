@@ -4,13 +4,9 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print installing dependencies
-        run: echo "Installing dependencies"
-      - name: Install dependencies
-        run: npm install
-      - name: Print start unit test
-        run: echo "Starting unit test"
-      - name: Start unit test
+      - name: Installing dependencies
+        run: |
+          cd rankingsRepoExcel/
+          npm install
+      - name: Starting unit test
         run: npm run test
-      - name: Print unit test end
-        run: echo "Unitest fished."
