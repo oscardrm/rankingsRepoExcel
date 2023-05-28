@@ -1,0 +1,12 @@
+name: Unit test
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print init unit test
+        run: echo "Starting unit test"
+      - name: Start unit test
+        run: npm run test
+      - name: Print unit test end
+        run: echo "Unitest fished."
