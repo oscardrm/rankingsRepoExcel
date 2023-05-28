@@ -4,7 +4,11 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print init unit test
+      - name: Print installing dependencies
+        run: echo "Installing dependencies"
+      - name: Install dependencies
+        run: npm install
+      - name: Print start unit test
         run: echo "Starting unit test"
       - name: Start unit test
         run: npm run test
