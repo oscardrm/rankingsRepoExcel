@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Ranking } from './interfaces/ranking.interface';
+import { Ranking } from './dto/rankingDto';
 import * as csvParser from 'csv-parser';
 import * as fs from 'fs';
 
@@ -60,4 +60,5 @@ export class AppService {
       return (aKey < bKey ? 1 : -1);
     }
   }
+
 }
